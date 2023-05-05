@@ -1,20 +1,17 @@
 import { BrowserRouter } from "react-router-dom";
 import Contact from "./components/Contact/contact.js"
+import Header from "./components/Header/Header.js";
 import Message from "./components/Message/message.js"
-// import Calendar from "./components/Calendar/calendar.js"
-// import Footer from "./components/Footer/Footer";
-// import Header from "./components/Header/Header";
+import Calendar from "./components/Calendar/calendar.js"
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        {/* <Header /> */}
-        {/* <Calendar /> */}
-        {/* <Footer /> */}
-      </BrowserRouter>
-
+      <Header />
+      <Footer />
     </div>
+
   );
 }
 
