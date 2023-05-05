@@ -9,12 +9,6 @@ function Header() {
 	return (
 		<header>
 			<div classname="header">
-				{/* <div className="header__logo">
-                    <img className="header__bar" src={header} alt="" />
-                </div> */}
-                {/* <div className="header__top--section">
-
-                    </div> */}
                     <div classname="on__top">
                         <img src={topbar} alt="" />
                     </div>
