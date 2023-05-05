@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         {/* <Header /> */}
         {/* <Calendar /> */}
-        {/* <Message /> */}
+        {/* <Footer /> */}
       </BrowserRouter>
 
     </div>
