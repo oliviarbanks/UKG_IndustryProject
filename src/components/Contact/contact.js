@@ -3,44 +3,46 @@ import "../Contact/contact.scss";
 
 function Contact() {
     return (
-        <div>
-            <h2 className="question">May we contact you?</h2>
-            <form className="contact-message">If we are in need, would you be interested in covering shifts while on vacation?
+        <div className="contact">
+            <h2 className="title">May we contact you?</h2>
+            <h3 className="subtitle">Please select the dates that would be ok for us to contact you if needed.</h3>
+            <form className="contact-message">
                 <div class="form-checkbox1">
                     <input type="checkbox" id="checkbox1"></input>
-                    <p>Mon</p>
+                    <p className="mon">Mon</p>
                     <label for="checkbox1">March 5th, 2023</label>
                 </div>
                 <div class="form-checkbox1">
                     <input type="checkbox" id="checkbox1"></input>
-                    <p>Tues</p>
+                    <p className="tues">Tues</p>
                     <label for="checkbox1">March 6th, 2023</label>
                 </div>
                 <div class="form-checkbox1">
                     <input type="checkbox" id="checkbox1"></input>
-                    <p>Weds</p>
+                    <p className="weds">Weds</p>
                     <label for="checkbox1">March 7th, 2023</label>
                 </div>
                 <div class="form-checkbox1">
                     <input type="checkbox" id="checkbox1"></input>
-                    <p>Thurs</p>
+                    <p className="thurs">Thurs</p>
                     <label for="checkbox1">March 8th, 2023</label>
                 </div>
                 <div class="form-checkbox1">
                     <input type="checkbox" id="checkbox1"></input>
-                    <p>Fri</p>
+                    <p className="fri">Fri</p>
                     <label for="checkbox1">March 9th, 2023</label>
                 </div>
                 <div class="form-checkbox1">
                     <input type="checkbox" id="checkbox1"></input>
-                    <p>Sat</p>
+                    <p className="sat">Sat</p>
                     <label for="checkbox1">March 10th, 2023</label>
                 </div>
                 <div class="form-checkbox1">
                     <input type="checkbox" id="checkbox1"></input>
-                    <p>Sun</p>
+                    <p className="sun">Sun</p>
                     <label for="checkbox1">March 11th, 2023</label>
                 </div>
+                <button className="share-availability">Share My Availability</button>
             </form>
         </div>
     );
