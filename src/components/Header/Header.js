@@ -1,5 +1,4 @@
 import React from "react";
-// import header from "../../../src/assets/images/Top Nav Bar.png";
 import "./Header.scss";
 import arrowimage from "../../../src/assets/images/Vector.png";
 import bellimage from "../../../src/assets/images/Bell.png";
