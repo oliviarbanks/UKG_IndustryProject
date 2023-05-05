@@ -1,0 +1,25 @@
+.footer__logo {
+    height: 7vh;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+}
+
+.footer__block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+h1 {
+    font-size: 4px;
+}
+
+p {
+    padding-bottom: 1px;
+    font-size: 3px;
+    margin: 0px;
+}
+
