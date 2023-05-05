@@ -10,8 +10,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         {/* <Header /> */}
-        {/* <Contact /> */}
+        <Contact />
         {/* <Footer /> */}
+        <Message />
       </BrowserRouter>
 
     </div>
