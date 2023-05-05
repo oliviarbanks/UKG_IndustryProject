@@ -1,15 +1,23 @@
 import React, { useState } from "react";
 import "./calendar.scss";
+import { Link } from "react-router-dom";
 
 const Calendar = () => {
   const [selectedDates, setSelectedDates] = useState([]);
 
-  const handleDateClick = (date) => {
-    if (selectedDates.includes(date)) {
-      setSelectedDates(selectedDates.filter((d) => d !== date));
-    } else {
-      setSelectedDates([...selectedDates, date]);
-    }
+  const handleDateClick = (e) => {
+    let datesArray = selectedDates;
+    datesArray.push(e);
+    console.log(e);
+    setSelectedDates(datesArray);
+    console.log(selectedDates);
+    console.log(isDateSelected(e));
+
+    // if (selectedDates.includes(date)) {
+    //   setSelectedDates(datesArray.filter((d) => d !== date));
+    // } else {
+    //   setSelectedDates([...selectedDates, date]);
+    // }
   };
 
   const isDateSelected = (date) => {
@@ -32,10 +40,10 @@ const Calendar = () => {
         <div className="calendar__row">
           <div className="calendar__week">
             <button
+              onClick={(e) => handleDateClick(26)}
               className={`calendar__date ${
-                isDateSelected(2) ? "selected" : ""
+                isDateSelected(26) ? "selected" : ""
               }`}
-              onClick={() => handleDateClick(2)}
             >
               26
             </button>
@@ -43,7 +51,7 @@ const Calendar = () => {
               className={`calendar__date ${
                 isDateSelected(3) ? "selected" : ""
               }`}
-              onClick={() => handleDateClick(3)}
+              onClick={() => handleDateClick(27)}
             >
               27
             </button>
@@ -51,7 +59,7 @@ const Calendar = () => {
               className={`calendar__date ${
                 isDateSelected(2) ? "selected" : ""
               }`}
-              onClick={() => handleDateClick(2)}
+              onClick={() => handleDateClick(28)}
             >
               28
             </button>
@@ -83,7 +91,7 @@ const Calendar = () => {
               className={`calendar__date-highlight ${
                 isDateSelected(2) ? "selected" : ""
               }`}
-              onClick={() => handleDateClick(2)}
+              onClick={() => handleDateClick(4)}
             >
               4
             </button>
@@ -93,7 +101,7 @@ const Calendar = () => {
               className={`calendar__date-highlight ${
                 isDateSelected(1) ? "selected" : ""
               }`}
-              onClick={() => handleDateClick(1)}
+              onClick={() => handleDateClick(5)}
             >
               5
             </button>
@@ -101,7 +109,7 @@ const Calendar = () => {
               className={`calendar__date-highlight ${
                 isDateSelected(2) ? "selected" : ""
               }`}
-              onClick={() => handleDateClick(2)}
+              onClick={() => handleDateClick(6)}
             >
               6
             </button>
@@ -109,7 +117,7 @@ const Calendar = () => {
               className={`calendar__date-dark ${
                 isDateSelected(3) ? "selected" : ""
               }`}
-              onClick={() => handleDateClick(3)}
+              onClick={() => handleDateClick(7)}
             >
               7
             </button>
@@ -117,7 +125,7 @@ const Calendar = () => {
               className={`calendar__date ${
                 isDateSelected(2) ? "selected" : ""
               }`}
-              onClick={() => handleDateClick(2)}
+              onClick={() => handleDateClick(8)}
             >
               8
             </button>
@@ -125,7 +133,7 @@ const Calendar = () => {
               className={`calendar__date ${
                 isDateSelected(1) ? "selected" : ""
               }`}
-              onClick={() => handleDateClick(1)}
+              onClick={() => handleDateClick(9)}
             >
               9
             </button>
@@ -133,7 +141,7 @@ const Calendar = () => {
               className={`calendar__date ${
                 isDateSelected(2) ? "selected" : ""
               }`}
-              onClick={() => handleDateClick(2)}
+              onClick={() => handleDateClick(10)}
             >
               10
             </button>
@@ -325,13 +333,15 @@ const Calendar = () => {
         <div className="bottom">
           <div className="bottom__button">
             From
-            <p className="bottom__button">03/01/2023</p>
+            <p className="bottom__button-date">03/01/2023</p>
           </div>
-          <div className="bottom__button">
+          <div className="bottom__button-date">
             To
-            <p>03/07/2023</p>
+            <p lassName="bottom__button-date">03/07/2023</p>
           </div>
-          <div className="bottom__button-dates">Set Dates</div>
+          <Link className="link" to="/calendar/contact">
+            <div className="bottom__button-dates">Set Dates</div>
+          </Link>
         </div>
       </div>
     </div>
