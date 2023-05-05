@@ -29,7 +29,7 @@ function Contact() {
                 </div>
                 <div class="form-checkbox1">
                     <input type="checkbox" id="checkbox1"></input>
-                    <p className="fri">Fri</p>
+                    <p className="frid">Fri</p>
                     <label for="checkbox1">March 9th, 2023</label>
                 </div>
                 <div class="form-checkbox1">
