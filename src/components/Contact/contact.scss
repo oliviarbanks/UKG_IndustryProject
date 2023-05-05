@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+
+input[type=checkbox] {
+    accent-color: #016C80;
+    border-radius: 6px;
+    height: 20px;
+    width: 20px;
+}
+
+
+.title {
+    padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+.contact {
+    margin: 24px 40px 40px;
+}
+
+.contact-message {
+    padding-bottom: 16px;
+    display:flex;
+    flex-direction:column;
+
+}
+
+.subtitle {
+    padding-bottom: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.form-checkbox1 {
+    display: flex;
+    margin: 0 0 15px 0;  
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ebecec;
+    & input {
+        position: relative;
+    }
+
+    & p {
+        padding-left: 40px;
+        // object-fit: contain;
+        position: relative;
+        font-weight: 600;
+        color: #016C80;
+
+    }
+
+    & label {
+        position: relative;
+        // object-fit: contain;
+        vertical-align: middle
+    }
+}
+
+.mon {
+    padding-right: 40px;
+}
+
+.tues {
+    padding-right: 38px;
+}
+
+.weds {
+    padding-right: 34px;
+}
+
+.thurs {
+    padding-right: 32px;
+}
+
+.fri {
+    padding-right: 56px;
+}
+
+.sat {
+    padding-right: 53px;
+}
+
+.sun {
+    padding-right: 46px;
+}
+
+button {
+    border-radius: 16px;
+    padding: 10px 0;
+    width: 195px;
+    margin-left: 57.5px;
+    margin-top: 31px;
+    color: white;
+    border-color: #016C80;
+    border-width: 0.1px;
+    background-color: #016C80;
+
+}
