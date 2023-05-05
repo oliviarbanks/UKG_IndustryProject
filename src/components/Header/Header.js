@@ -3,6 +3,7 @@ import React from "react";
 import "./Header.scss";
 import arrowimage from "../../../src/assets/images/Vector.png";
 import bellimage from "../../../src/assets/images/Bell.png";
+import topbar from "../../../src/assets//images/Light.png";
 
 function Header() {
 	return (
@@ -14,6 +15,9 @@ function Header() {
                 {/* <div className="header__top--section">
 
                     </div> */}
+                    <div classname="on__top">
+                        <img src={topbar} alt="" />
+                    </div>
 
 				<div className="header__top">
                     <div className="header__arrow">
@@ -28,13 +32,13 @@ function Header() {
                 </div>
 					<div className="header__bottom">
 						<div className="header__bottom--words">
-                            <div>
+                            <div className="header__click">
                                 <h2>My Calendar</h2>
                             </div>
-							<div>
+							<div className="header__click">
                                 <h2>Free Shifts</h2>
                             </div>
-							<div>
+							<div className="header__click" >
                                 <h2>Time Off</h2>
                             </div>
 							
