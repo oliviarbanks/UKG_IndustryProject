@@ -6,7 +6,7 @@ function Contact() {
   return (
     <div className="message">
       <Link to="/calendar" className="link">
-        <img src={Congrats}></img>
+        <img className="congrats" src={Congrats}></img>
       </Link>
     </div>
   );
