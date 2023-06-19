@@ -12,12 +12,6 @@ const Calendar = () => {
     setSelectedDates(datesArray);
     console.log(selectedDates);
     console.log(isDateSelected(e));
-
-    // if (selectedDates.includes(date)) {
-    //   setSelectedDates(datesArray.filter((d) => d !== date));
-    // } else {
-    //   setSelectedDates([...selectedDates, date]);
-    // }
   };
 
   const isDateSelected = (date) => {
@@ -339,7 +333,7 @@ const Calendar = () => {
             To
             <p lassName="bottom__button-date">03/07/2023</p>
           </div>
-          <Link className="link" to="/calendar/contact">
+          <Link className="link" to="/contact">
             <div className="bottom__button-dates">Set Dates</div>
           </Link>
         </div>

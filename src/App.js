@@ -11,9 +11,9 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/calendar" element={<Calendar />}></Route>
-          <Route path="/calendar/contact" element={<Contact />}></Route>
-          <Route path="/calendar/contact/message" element={<Message />}></Route>
+          <Route path="/" element={<Calendar />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/message" element={<Message />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

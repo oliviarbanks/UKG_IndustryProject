@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Contact() {
   return (
     <div className="message">
-      <Link to="/calendar" className="link">
+      <Link to="/message" className="link">
         <img className="congrats" src={Congrats}></img>
       </Link>
     </div>

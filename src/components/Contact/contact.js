@@ -45,7 +45,7 @@ function Contact() {
           <p className="sun">Sun</p>
           <label for="checkbox1">March 11th, 2023</label>
         </div>
-        <Link className="link" to="/calendar/contact/message">
+        <Link className="link" to="/message">
           <button className="share-availability">Share My Availability</button>
         </Link>
       </form>
